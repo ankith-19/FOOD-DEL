@@ -10,8 +10,6 @@ const placeOrder = async (req,res) => {
 
     const frontend_url = "http://localhost:5174";
 
-    console.log(process.env.STRIPE_SECRET_KEY);
-
     try {
         const newOrder = new orderModel({
             userId:req.body.userId,
